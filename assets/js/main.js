@@ -34,6 +34,19 @@
     }
   }
 
+  const gallery = document.getElementById('image-gallery');
+  const images = document.querySelectorAll('.gallery-image');
+
+  let currentIndex = 0;
+
+  function nextImage() {
+    currentIndex = (currentIndex + 1) % images.length;
+    const translateX = -currentIndex * 100; // 100% de desplazamiento por imagen
+    gallery.style.transform = `translateX(${translateX}%)`;
+  }
+
+setInterval(nextImage, 3000); // Cambia de imagen cada 3 segundos
+
   /**
    * Easy on scroll event listener 
    */

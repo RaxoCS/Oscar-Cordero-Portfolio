@@ -23,6 +23,20 @@ h6 {
   color: #1e1e1e;
 }
 
+.image-gallery {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.gallery-image {
+  flex: 0 0 100%; /* Cada imagen ocupa el 100% del ancho */
+  height: 100vh; /* Toma toda la altura de la ventana */
+  background-size: cover;
+  background-position: center;
+  transition: transform 1s; /* Agregar transición para el efecto de desplazamiento */
+}
+
 a {
   color: #1e1e1e;
   text-decoration: none;
