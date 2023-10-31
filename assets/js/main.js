@@ -230,6 +230,17 @@ setInterval(nextImage, 3000); // Cambia de imagen cada 3 segundos
     }
   });
 
+  new Swiper('.hero-section', {
+    speed: 600,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    slidesPerView: 'auto',
+  });
+
+
   /**
    * Preloader
    */
