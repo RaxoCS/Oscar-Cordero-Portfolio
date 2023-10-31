@@ -1380,7 +1380,7 @@ a:hover {
 .blog-wrapper .blockquote {
   border-left: 4px solid #0f4b80;
   padding: 18px;
-  font-style: italic;
+  font-style: bold;
 }
 
 /*------/ Comments /------*/
