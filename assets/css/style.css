@@ -11,7 +11,10 @@
   height: 100vh; /* Set the height to 100% of the viewport height */
   background-size: cover;
   background-position: center;
+  margin: 0 auto; /* Center horizontally using margin */
+  text-align: center; /* Center any inline or inline-block elements inside */
 }
+
 
 .centered-text {
   z-index: 2;
