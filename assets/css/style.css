@@ -8,12 +8,18 @@
 .portfolio-details-slider {
   position: relative;
   width: 100%;
-  height: 100vh; /* Set the height to 100% of the viewport height */
+  height: 100vb;
   background-size: cover;
   background-position: center;
-  margin: 0 auto; /* Center horizontally using margin */
-  text-align: center; /* Center any inline or inline-block elements inside */
+  margin: 0 auto; 
+  text-align: center; 
 }
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+}
+
 
 
 .centered-text {
