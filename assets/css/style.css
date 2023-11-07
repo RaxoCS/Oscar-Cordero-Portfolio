@@ -23,6 +23,59 @@ h6 {
   color: #1e1e1e;
 }
 
+/* Estilos para el contenedor del video */
+.hero {
+  position: relative;
+}
+
+/* Estilos para el contenedor del video */
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+/* Estilos para el video */
+.video {
+  width: 100%;
+  height: auto;
+}
+
+/* Pseudo-elemento para agregar opacidad al video */
+.video::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Ajusta la opacidad aquí */
+  z-index: 1;
+}
+
+/* Estilos para el contenido de texto */
+.hero-content-video {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+}
+
+.hero-title-video {
+  color: #fff;
+  font-weight: 600;
+  font-size: 4rem;
+}
+
+.hero-subtitle-video {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
 .skill-icon {
   width: 50px; /* Establece el ancho deseado */
   height: 50px; /* Establece la altura deseada */
